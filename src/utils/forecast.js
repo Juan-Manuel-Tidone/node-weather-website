@@ -2,7 +2,7 @@ const request = require('request')
 
 //Get current weather from a particular lat and long
 const forecast = (latitude, longitude, callback) => {
-    const url ='https://api.darksky.net/forecast/b2972d904e35ef35f29f431b57148fd9/'+latitude+','+longitude+'?units=si&lang=es'
+    const url ='https://api.darksky.net/forecast/b2972d904e35ef35f29f431b57148fd9/'+latitude+','+longitude+'?units=si&lang=en'
     request({url, json:true},(error, {body}) =>{
     if(error)
         {
